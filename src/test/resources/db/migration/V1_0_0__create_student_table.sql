@@ -1,4 +1,4 @@
-CREATE TABLE student (
+CREATE TABLE user_profile (
     email VARCHAR(100) PRIMARY KEY,
     firstname VARCHAR(50) NOT NULL,
     lastname VARCHAR(50) NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE student (
     coursename VARCHAR(100)
 );
 
-INSERT INTO student (email, firstname, lastname, department, gender, coursename) VALUES
+INSERT INTO user_profile (email, firstname, lastname, department, gender, coursename) VALUES
 ('student1@example.com', 'John', 'Doe', 'Computer Science', 'Male', 'Java Programming'),
 ('student2@example.com', 'Jane', 'Smith', 'Electronics', 'Female', 'Digital Systems'),
 ('student3@example.com', 'Alice', 'Brown', 'Mechanical', 'Female', 'Thermodynamics'),
