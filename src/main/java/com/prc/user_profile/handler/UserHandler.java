@@ -52,15 +52,5 @@ public class UserHandler {
                                   )
                     );
     }
-
-    public Mono<ServerResponse> setPaasword(ServerRequest serverRequest){
-        try{
-            serverRequest.bodyToMono(UserDTO.class);
-                    //.flatMap(user-> )
-            return ServerResponse.ok().body("",String.class);
-        }catch (Exception ex){
-            return ServerResponse.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new GenericResponse("Error occured while setting password"), GenericResponse.class);
-        }
-    }
 }
 

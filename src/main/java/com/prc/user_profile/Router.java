@@ -29,7 +29,6 @@ public class Router {
         RouterFunction<ServerResponse> usersApi(UserHandler handler){
             return SpringdocRouteBuilder.route()
                     .POST(prefix+"signup",handler::signupUser,UserOpenApi.signupUserAPI())
-                    .POST("set-password",handler::setPaasword,UserOpenApi.studentGetAllStudentsAPI())
-                    .build();
+                     .build();
         }
 }
